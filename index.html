@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="teste.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de várias configurações</title>
+    <link
+      rel="shortcut icon"
+      href="done_outline_FILL0_wght700_GRAD0_opsz48.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /**background-image: linear-gradient(
+        180deg,
+        rgb(142, 142, 238),
+        rgb(146, 226, 146)
+      );
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; */
+
+        background-color: rgb(27, 26, 26);
+      }
+      main {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        text-indent: 20px;
+        font-family: "Ysabeau Infant", sans-serif;
+        margin: auto;
+      }
+
+      article {
+        background-color: blanchedalmond;
+        border: 3px solid black;
+        margin-left: 5px;
+        max-width: 800px;
+        height: fit-content;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        text-indent: 20x;
+        display: flex;
+        font-family: "Ysabeau Infant", sans-serif;
+      }
+      article h1,
+      div aside h1 {
+        padding: 20px;
+        font-family: "Ysabeau Infant", sans-serif;
+        text-align: center;
+        animation: normal sla 1.5s;
+      }
+      article p,
+      div aside p {
+        font-size: 1.2em;
+        font-family: "Ysabeau Infant", sans-serif;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+      }
+      div aside {
+        background-color: blanchedalmond;
+        border: 3px solid black;
+        margin: auto;
+        max-width: 800px;
+        height: fit-content;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        text-indent: 20px;
+        animation: gg 0.8s;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        font-family: "Ysabeau Infant", sans-serif;
+      }
+
+      div aside ul li {
+        list-style-type: none;
+        font-weight: bold;
+        width: fit-content;
+        font-size: 1.3em;
+      }
+      div aside ul li:hover {
+        width: fit-content;
+        animation: kk 0.8s;
+        transition-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      div footer {
+        background-color: rgb(255, 192, 192);
+        text-align: center;
+        font-size: 1.3em;
+        animation: normal 8s ff;
+      }
+
+      header {
+        background-color: lightskyblue;
+        text-align: center;
+        animation: normal 0.7s ff;
+        margin: auto;
+      }
+      header h1 {
+        animation: normal sla 1s;
+      }
+      menu ul {
+        list-style-type: none;
+        display: flex;
+      }
+      menu ul li {
+        background-color: rgba(204, 149, 255, 0.527);
+        margin: 10px;
+        padding: 5px;
+        animation: normal sla 1.5s;
+      }
+      menu ul li:hover {
+        background-color: rgb(255, 218, 218);
+        cursor: pointer;
+        transition-duration: 1s;
+        transform: translateX(10px);
+      }
+      article a,
+      aside a {
+        text-decoration: none;
+        color: black;
+      }
+      article#primeiro {
+        animation: normal gg 1s;
+      }
+      article#segundo {
+        animation: normal gg 2.5s;
+      }
+      article#terceiro {
+        animation: normal gg 4s;
+      }
+      aside#primeiro {
+        animation: gg normal 1s;
+      }
+      aside#segundo {
+        animation: normal gg 2.5s;
+      }
+      aside#terceiro {
+        animation: normal gg 4s;
+      }
+      img {
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+        border: 2px solid rgb(155, 84, 84);
+        border-radius: 3px;
+        animation: normal img 5s;
+      }
+      div aside a:hover {
+        transform: scale(1.03);
+      }
+      div article a:hover {
+        transform: scale(1.03);
+      }
+      button {
+        background-color: rgba(204, 149, 255, 0.527);
+        border: none;
+        margin-left: 10px;
+        display: block;
+        border: solid 2px black;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: rgb(255, 218, 218);
+        cursor: pointer;
+      }
+      menu#items {
+        display: none;
+      }
+      img#menu {
+        border: none;
+        margin: auto;
+        animation: normal img 1s;
+      }
+      menu ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      div menu ul li {
+        display: flex;
+        flex-direction: column;
+      }
+      @keyframes sla {
+        from {
+          transform: translateX(150px);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes kk {
+        from {
+          transform: translateX(0px);
+        }
+
+        to {
+          transform: translateX(50px);
+        }
+      }
+      @keyframes gg {
+        from {
+          transform: translateY(30px);
+          opacity: 0%;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 100%;
+        }
+      }
+      @keyframes ff {
+        from {
+          opacity: 0%;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 100%;
+          transform: translateY(0);
+        }
+      }
+      @keyframes img {
+        from {
+          opacity: 0%;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 100%;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        main {
+          width: 70%;
+          display: inline;
+          margin: auto;
+        }
+        header {
+          max-width: 100%;
+        }
+        article p,
+        aside p {
+          text-indent: 20px;
+        }
+
+        button {
+          margin: auto;
+          margin-top: 15px;
+        }
+        menu ul {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+        }
+      }
+      @media (min-width: 768px) {
+        main {
+          display: inline;
+        }
+        img {
+          width: 70%;
+        }
+      }
+      @media (min-width: 830px) {
+        main {
+          display: flex;
+        }
+        img {
+          width: 98%;
+        }
+      }
+    </style>
+    <header>
+      <h1>Algo + algo = alguma coisa</h1>
+      <button onclick="clickMenu()">
+        <img src="menu_FILL0_wght700_GRAD200_opsz48.png" alt="" id="menu" />
+      </button>
+
+      <menu id="items">
+        <ul>
+          <li>
+            <a
+              href="https://mundoeducacao.uol.com.br/fisica/trabalho-um-gas.htm"
+              target="_blank"
+              >Primeira opção</a
+            >
+          </li>
+          <li>
+            <a href="https://www.awwwards.com/websites/" target="_blank"
+              >Segunda opção</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.hashtagtreinamentos.com/codigos-prontos-em-python"
+              target="_blank"
+              >Terceira opção</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf"
+              target="_blank"
+              >Quarta opção</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.devmedia.com.br/menu-em-css-menu-dropdown-horizontal-com-html5-e-css3/37205"
+              target="_blank"
+              >Quinta opção</a
+            >
+          </li>
+        </ul>
+      </menu>
+    </header>
+
+    <main>
+      <div>
+        <article id="primeiro">
+          <a href="https://news.un.org/en/story/2023/06/1138047" target="_blank"
+            ><h1>
+              Ukraine: War weakening international security, political affairs
+              chief warns
+            </h1>
+            <p>
+              “The war in Ukraine has created a humanitarian and human rights
+              catastrophe, traumatized a generation of children, and accelerated
+              the global food and energy crises,” said Rosemary DiCarlo,
+              Under-Secretary-General for Political and Peacebuilding Affairs.
+              “We cannot discount further dangerous knock-on effects,” she
+              cautioned, citing urgent concerns, from rising death tolls to
+              nuclear threats.
+            </p>
+            <img
+              src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/20-06-2023-UNICEF-Ukraine.jpg/image1170x530cropped.jpg"
+              alt=""
+            />
+          </a>
+        </article>
+        <article id="segundo">
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_animations/Using_CSS_animations"
+            target="_blank"
+            ><h1>Usando animações CSS</h1>
+            <p>
+              Animações CSS tornam possível animar transições de um estilo CSS
+              para outro. Animações se consistem de dois componentes: um estilo
+              descrevendo a animação e um set de keyframes que indicam o estado
+              final e inicial do estilo CSS da animação, bem como possíveis
+              waypoints intermediários ao longo do caminho.
+            </p>
+            <img src="mml.PNG" alt=""
+          /></a>
+        </article>
+        <article id="terceiro">
+          <a
+            href="https://www.cnnbrasil.com.br/entretenimento/fas-descobrem-mais-de-uma-versao-de-atraves-do-aranhaverso-nos-cinemas/"
+            target="_blank"
+            ><h1>
+              Fãs descobrem mais de uma versão de Através do Aranhaverso nos
+              cinemas
+            </h1>
+            <p>
+              Parece que o filme “Homem-Aranha: Através do Aranhaverso” imita
+              sua própria trama, com diferentes versões vivendo no multiverso de
+              salas de cinema. Isso porque o editor da animação, Andrew Leviton,
+              foi ao Twitter para confirmar a existência de pelo menos duas
+              versões diferentes do longa sendo exibidas.
+            </p>
+            <img
+              src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/06/Fa%CC%83s-descobrem-mais-de-uma-versa%CC%83o-de-Atrave%CC%81s-do-Aranhaverso-nos-cinemas.png?w=876&h=484&crop=1"
+              alt=""
+          /></a>
+        </article>
+      </div>
+      <div>
+        <aside id="primeiro">
+          <a
+            href="https://br.ign.com/the-legend-of-zelda-tears-of-the-kingdom/110490/news/zelda-tears-of-the-kingdom-jogador-leva-200-horas-para-descobrir-um-truque-infalivel-contra-certos-m"
+            target="_blank"
+            ><h1>
+              Zelda Tears of the Kingdom: Jogador leva 200 horas para descobrir
+              um truque infalível contra certos monstros
+            </h1>
+
+            <p>
+              Com um jogo tão completo como The Legend of Zelda: Tears of the
+              Kingdom, não é muito surpreendente descobrir coisas ao longo do
+              games. Mas uma coisa é certa: provavelmente ninguém esperava ver a
+              técnica de que vamos falar hoje.
+            </p>
+            <img src="lk.PNG" alt=""
+          /></a>
+        </aside>
+        <aside id="segundo">
+          <a
+            href="https://brasilescola.uol.com.br/historiab/independencia-brasil.htm"
+            target="_blank"
+            ><h1>Independência do Brasil</h1>
+
+            <p>
+              "A presença da família real no Brasil havia proporcionado grandes
+              avanços, mas, ainda assim, demonstrações de insatisfação
+              aconteceram por meio da Revolução Pernambucana de 1817. A mudança
+              da família real para o Brasil havia resultado em grande aumento de
+              impostos e interferido diretamente na administração da capitania.
+              A Revolução Pernambucana de 1817 foi reprimida violentamente. Três
+              anos depois dessa repressão, o rei D. João VI teve de lidar com
+              insatisfações em Portugal que se manifestaram em Revolução Liberal
+              do Porto de 1820. Esse foi o ponto de partida do processo de
+              independência do Brasil.
+            </p>
+            <img
+              src="https://s5.static.brasilescola.uol.com.br/be/2021/05/d-pedro.jpg"
+              alt=""
+            />
+            <p>Veja mais sobre "Independência do Brasil"</p></a
+          >
+        </aside>
+        <aside id="terceiro">
+          <a href=""
+            ><h1>
+              The Flash tem a maior queda de bilheteria de todos os filmes da DC
+            </h1>
+            <p>
+              Em cartaz nos cinemas desde o último dia 15, The Flash tem sofrido
+              com a recepção morna de público e crítica, e a situação é ainda
+              mais complicada em um índice mais importante: a bilheteria.
+              Segundo o portal Variety, o filme com Ezra Miller teve uma queda
+              de 73% na venda de ingressos durante a segunda semana nas salas
+              dos EUA. O índice é o maior já registrado para um longa do
+              universo DC, superando até títulos como Adão Negro (2022) e
+              Shazam! Fúria dos Deuses (2023).
+            </p>
+            <img
+              src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/06/the_flash_queda_bilheteria_dc__un1sh32-1210x544.jpg"
+              alt=""
+          /></a>
+        </aside>
+      </div>
+    </main>
+
+    <div>
+      <footer>
+        <p>Site feito por <strong> Oséias</strong>.</p>
+      </footer>
+    </div>
+
+    <script>
+      function clickMenu() {
+        if (items.style.display == "flex") {
+          items.style.display = "none";
+        } else {
+          items.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>

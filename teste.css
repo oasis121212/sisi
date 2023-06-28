@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /**background-image: linear-gradient(
+    180deg,
+    rgb(142, 142, 238),
+    rgb(146, 226, 146)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+ 
+  background-color: rgb(27, 26, 26);
+
+
+}
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  text-indent: 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  margin: auto;
+  
+}
+
+article {
+  background-color: blanchedalmond;
+  border: 3px solid black;
+  margin-left: 5px;
+  max-width:800px;
+  height: fit-content;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  text-indent: 20x;
+  display: flex;
+  font-family: "Ysabeau Infant", sans-serif;
+  
+}
+article h1, div aside h1 {
+  padding: 20px;
+  font-family: "Ysabeau Infant", sans-serif;
+  text-align: center;
+  animation: normal sla 1.5s;
+}
+article p,
+div aside p {
+  font-size: 1.2em;
+  font-family: "Ysabeau Infant", sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+div aside {
+  background-color: blanchedalmond;
+  border: 3px solid black;
+  margin: auto;
+  max-width: 800px;
+  height: fit-content;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  text-indent: 20px;
+  animation: gg 0.8s;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+div aside ul li {
+  list-style-type: none;
+  font-weight: bold;
+  width: fit-content;
+  font-size: 1.3em;
+}
+div aside ul li:hover {
+  width: fit-content;
+  animation: kk 0.8s;
+  transition-duration: 1s;
+  animation-fill-mode: both;
+}
+
+div footer {
+  background-color: rgb(255, 192, 192);
+  text-align: center;
+  font-size: 1.3em;
+  animation: normal 8s ff;
+}
+
+header {
+  background-color: lightskyblue;
+  text-align: center;
+  animation: normal 0.7s ff;
+ margin: auto;
+
+
+  
+}
+header h1{
+  animation: normal sla 1s;
+}
+menu ul {
+  list-style-type: none;
+  display: flex;
+  
+}
+menu ul li {
+  background-color: rgba(204, 149, 255, 0.527);
+  margin: 10px;
+  padding: 5px;
+  animation: normal sla 1.5s;
+}
+menu ul li:hover {
+  background-color: rgb(255, 218, 218);
+  cursor: pointer;
+  transition-duration: 1s;
+  transform: translateX(10px);
+}
+article a, aside a {
+  text-decoration: none;
+  color: black;
+}
+article#primeiro{
+  animation: normal gg 1s;
+}
+article#segundo{
+  animation: normal gg 2.5s;
+}
+article#terceiro{
+  animation: normal gg 4s;
+}
+aside#primeiro{
+  animation: gg normal 1s;
+}
+aside#segundo{
+  animation: normal gg 2.5s;
+}
+aside#terceiro{
+  animation: normal gg 4s;
+}
+img {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  border: 2px solid rgb(155, 84, 84);
+  border-radius: 3px;
+  animation: normal img 5s;
+}
+div aside a:hover {
+  transform: scale(1.03);
+}
+div article a:hover {
+  transform: scale(1.03);
+}
+button{
+  background-color: rgba(204, 149, 255, 0.527);
+  border: none;
+  margin-left: 10px;
+  display: block;
+  border: solid 2px black;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  
+}
+button:hover{
+  background-color: rgb(255, 218, 218);
+  cursor: pointer;
+  
+  
+}
+menu#items{
+  display: none;
+}
+img#menu{
+  border: none;
+  margin: auto;
+  animation: normal img 1s;
+}
+menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+div menu ul li {
+  display: flex;
+  flex-direction: column;
+}
+@keyframes sla {
+  from {
+    transform: translateX(150px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes kk {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(50px);
+  }
+}
+@keyframes gg {
+  from {
+    transform: translateY(30px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes ff {
+  from {
+    opacity: 0%;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes img {
+  from {
+    opacity: 0%;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px){
+    
+main{
+  width: 70%;
+display: inline;
+margin: auto;
+ 
+}
+header{
+  max-width: 100%;
+}
+article p, aside p{
+  text-indent: 20px;
+}
+
+button{
+  margin: auto;
+  margin-top: 15px;
+}
+menu ul{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  
+}
+
+
+}
+@media (min-width: 768px){
+
+main{
+  display: inline;
+}
+img{
+  width: 70%;
+}
+
+
+}
+@media (min-width: 830px){
+
+main{
+  
+  display: flex;
+  
+  
+}
+img{
+
+  width: 98%;
+
+
+
+}
+
+
+
+
+}
+
+
+
+
